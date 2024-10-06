@@ -1,0 +1,46 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img-lines(src="images/finances-section-img-lines.png" loading="lazy" width="422" height="168" alt="image")
+      h2.finances-section__title.font-w-bold.font-s-42.text-up
+        | Начните зарабатывать сразу 
+        br.no-br
+        | после 
+        span.color-sea старта бизнеса
+      .finances-section__sub-title.font-s-22
+        | Показатели франшизы в цифрах
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-semi-bold.font-s-30.text-up 727 000 рублей
+            .font-s-18 ежемесячная <br> выручка
+          .finances-section__card.swiper-slide
+            .font-w-semi-bold.font-s-30.text-up от 2 500 рублей
+            .font-s-18 средний чек одного <br> клиента
+          .finances-section__card.swiper-slide
+            .font-w-semi-bold.font-s-30.text-up 136 000 рублей
+            .font-s-18 ежемесячная <br>чистая прибыль
+          .finances-section__card.swiper-slide
+            .font-w-semi-bold.font-s-30.text-up с 1-го месяца
+            .font-s-18 вы начнете <br> зарабатывать
+          .finances-section__card.swiper-slide
+            .font-w-semi-bold.font-s-30.text-up от 9 продаж
+            .font-s-18 будет совершаться <br> ежедневно
+          .finances-section__card.swiper-slide
+            .font-w-semi-bold.font-s-30.text-up 18,8%
+            .font-s-18 рентабельность <br> по чистой прибыли
+        .finances-pagination.swiper-progress-finances
+      .finances-section__bottom
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="862" height="630" alt="image")
+        .font-w-semi-bold.font-s-28.text-up
+          | Хотите получить подробные расчёты 
+          br.no-br
+          | для вашего города и 
+          span.color-green под ваш бюджет?
+        .finances-section__bottom-text.font-s-18 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug

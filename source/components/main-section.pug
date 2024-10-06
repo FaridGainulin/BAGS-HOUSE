@@ -1,0 +1,26 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-42.text-up
+        | Зарабатывайте 
+        span.color-sea от 1,6 млн 
+        span.font-w-m-bold.color-sea ₽ 
+        br.no-br
+        span.color-sea чистой прибыли в год 
+        br.no-br
+        | На собственном магазине 
+        br.no-br
+        | сумок и чемоданов
+      .main-section__line
+      .main-section__text.font-s-18
+        | Получите подробную презентацию франшизы 
+        span.color-green.font-w-medium «BAGS HOUSE»
+      form.main-section__form(data-feedback-form)
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Получить
+        .main-section__agree-wrapper
+          include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1186" height="1074" alt="image")
+      img.main-section__img-baggage(src="images/main-section-img-baggage.png" loading="lazy" width="1598" height="988" alt="image")

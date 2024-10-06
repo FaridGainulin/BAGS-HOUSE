@@ -1,0 +1,68 @@
+section.steps-section
+  .wrapper
+    .steps-section__container
+      img.steps-section__bottom-lines(src="images/steps-section-bottom-lines.png" loading="lazy" width="422" height="168" alt="image")
+      .steps-section__box
+        h2.steps-section__title.font-w-bold.font-s-42.text-up
+          | Как мы будем открывать 
+          br.no-br
+          span.color-sea ваш магазин
+        .swiper-steps
+          .steps-section__cards.swiper-wrapper
+            .steps-section__card.swiper-slide
+              .font-w-bold.font-s-26.text-up.color-sea 1 шаг
+              .steps-section__card-line
+              .font-s-22
+                | Заключение 
+                br.no-br
+                | партнерского договора
+            .steps-section__card.swiper-slide.steps-card-order-3
+              .font-w-bold.font-s-26.text-up.color-sea 2 шаг
+              .steps-section__card-line
+              .font-s-22
+                | Аренда помещения 
+                br.no-br
+                | и ремонт
+            .steps-section__card.swiper-slide.steps-card-order-5
+              .font-w-bold.font-s-26.text-up.color-sea 3 шаг
+              .steps-section__card-line
+              .font-s-22
+                | Доставка и монтаж 
+                br.no-br
+                | оборудования и мебели
+            .steps-section__card.swiper-slide.steps-card-order-2
+              .font-w-bold.font-s-26.text-up.color-sea 4 шаг
+              .steps-section__card-line
+              .font-s-22
+                | Поиск и обучение 
+                br.no-br
+                | персонала
+            .steps-section__card.swiper-slide.steps-card-order-4
+              .font-w-bold.font-s-26.text-up.color-sea 5 шаг
+              .steps-section__card-line
+              .font-s-22
+                | Формирование первичных 
+                br.no-br
+                | запасов товара
+            .steps-section__card.swiper-slide.steps-card-order-6
+              .font-w-bold.font-s-26.text-up.color-sea 6 шаг
+              .steps-section__card-line
+              .font-s-22
+                | Открытие точки, 
+                br.no-br
+                | старт работы
+          .steps-pagination.swiper-progress-steps
+      .steps-section__bottom
+        .font-w-semi-bold.font-s-28.text-up
+          | Получите подробный план 
+          br.no-br
+          | запуска бизнеса 
+          span.color-green в 1 клик
+        form.steps-section__form(data-feedback-form)
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Получить
+        .steps-section__agree-wrapper
+          include ../components/agree.pug
+      img.steps-section__img(src="images/steps-section-img.png" loading="lazy" width="1856" height="1988" alt="image")
+      img.steps-section__img-baggage(src="images/steps-section-img-baggage.png" loading="lazy" width="1504" height="1042" alt="image")

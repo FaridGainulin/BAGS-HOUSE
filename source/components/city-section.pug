@@ -1,0 +1,25 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-bold.font-s-42.text-up
+        | Станьте партнёром 
+        br.no-br
+        | франшизы 
+        span.color-green «BAGS HOUSE» 
+        br.no-br
+        | и зарабатывайте 
+        br.no-br
+        span.color-sea от 136 000 рублей 
+        span.font-w-m-bold.color-sea ₽ 
+        br.no-br
+        | ежемесячно
+      .city-section__line
+      .city-section__sub-title.font-s-18
+        | Проверьте, свободен ли ваш город для работы с нами
+      form.city-section__form(data-feedback-form)
+        input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Проверить
+        .city-section__agree-wrapper
+          include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1210" height="956" alt="image")

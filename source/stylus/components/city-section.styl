@@ -1,0 +1,96 @@
+.city-section
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #2b2b2b
+
+  &__container
+    position relative
+    text-align: center
+    color: #fff
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      text-align: start
+      padding 70px 0 50px 0
+    +above($breakpoints.md)
+      padding 90px 0 80px 0
+    +above($breakpoints.xxl)
+      padding 124px 0 166px 0
+
+  &__line
+    margin 0 auto
+    width 53px
+    height: 2px
+    border-radius: 2px
+    background-color #0F838F
+    +above($breakpoints.sm)
+      margin 0
+
+  &__title
+    padding 0 0 15px 0
+    +above($breakpoints.sm)
+      padding 0 0 20px 0
+    +above($breakpoints.md)
+      padding 0 0 25px 0
+    +above($breakpoints.xxl)
+      padding 0 0 28px 0
+
+  &__sub-title
+    padding 15px 0 15px 0
+    +above($breakpoints.sm)
+      padding 20px 0 20px 0
+    +above($breakpoints.md)
+      padding 25px 0 20px 0
+    +above($breakpoints.xxl)
+      padding 28px 0 24px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    width 100%
+    +above($breakpoints.sm)
+      flex-direction: row
+      flex-wrap: wrap
+      width 480px
+    +above($breakpoints.md)
+      gap: 8px
+    +above($breakpoints.xxl)
+      gap: 10px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 200px !important
+      +above($breakpoints.md)
+        width 210px !important
+      +above($breakpoints.xxl)
+        width 230px !important
+
+  &__agree-wrapper
+    +above($breakpoints.sm)
+      padding-left 18px
+    +above($breakpoints.md)
+      padding-left 20px
+    +above($breakpoints.xxl)
+      padding-left 28px
+
+  &__img
+    width 308px
+    height: auto
+    margin 15px 0 0 17px
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      width: 350px;
+      top: 91px;
+      right: -40px;
+    +above($breakpoints.md)
+      width: 489px;
+      top: 88px;
+      right: -57px;
+    +above($breakpoints.xxl)
+      width 605px
+      top: 124px
+      right: -69px

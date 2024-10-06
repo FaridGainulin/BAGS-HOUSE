@@ -1,0 +1,51 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      .about-section__top
+        .about-section__top-left
+          h2.about-section__title.font-w-bold.font-s-42.text-up
+            | «BAGS HOUSE»: уже 
+            br.no-br
+            span.color-sea 20 лет 
+            | на рынке
+          .about-section__text.font-s-18
+            | Мы занимаемся продажей популярных сумок, 
+            br.no-br
+            | чемоданов и аксессуаров по доступным ценам 
+            br.no-br
+            | от проверенных поставщиков
+            br
+            br
+            | Открыли уже три точки сети и уверены 
+            br.no-br
+            | в актуальности и востребованности нашего бизнеса 
+            br.no-br
+            | в любом городе России
+            br
+            br
+            | Наша целевая аудитория — это люди 
+            br.no-br
+            | с совершенно разным достатком, которые хотят 
+            br.no-br
+            | приобрести качественный товар
+            br
+            br
+            | Станьте частью нашей команды и выйдете на 
+            br.no-br
+            | стабильную чистую прибыль сразу после открытия 
+            br.no-br
+            | вашей точки!
+        img.about-section__img(src="images/about-section-img.png" loading="lazy" width="1154" height="1064" alt="image")
+      .about-section__bottom
+        img.about-section__bottom-img(src="images/about-section-bottom-img.png" loading="lazy" width="1216" height="894" alt="image")
+        .font-w-semi-bold.font-s-28.text-up
+          | Узнайте больше о 
+          span.color-green «BAGS HOUSE»
+        .font-s-18 Задайте любой вопрос о работе франшизы
+        form.about-section__form(data-feedback-form)
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+          button.btn(type="submit") Задать вопрос
+          .about-section__agree-wrapper
+            include ../components/agree.pug
